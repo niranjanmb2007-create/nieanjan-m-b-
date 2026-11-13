@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Niranjan Photo Gallery</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Georgia",serif;
+}
+
+
+body{
+
+    background:#111;
+
+    color:white;
+
+}
+
+
+/* Heading */
+
+header{
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+
+header h1{
+
+    font-size:45px;
+
+    color:#00e1ff;
+
+    text-shadow:0 0 20px #00b7ff;
+
+}
+
+
+header p{
+
+    color:#ddd;
+
+    margin-top:10px;
+
+}
+
+
+
+
+
+/* Gallery */
+
+
+.gallery{
+
+    width:90%;
+
+    margin:auto;
+
+    columns:3;
+
+    column-gap:25px;
+
+}
+
+
+
+.card{
+
+    position:relative;
+
+    margin-bottom:25px;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    break-inside:avoid;
+
+    background:#222;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+
+    animation:show 1s;
+
+}
+
+
+
+.card img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.6s;
+
+}
+
+
+
+.card:hover img{
+
+    transform:scale(1.15);
+
+}
+
+
+
+/* Overlay */
+
+
+.card::after{
+
+    content:"View Photo";
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(0,0,0,.5);
+
+    opacity:0;
+
+    font-size:25px;
+
+    color:#00eeff;
+
+    transition:.5s;
+
+}
+
+
+
+.card:hover::after{
+
+    opacity:1;
+
+}
+
+
+
+
+
+@keyframes show{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+
+
+
+
+/* Back Button */
+
+
+.back{
+
+    display:block;
+
+    width:180px;
+
+    text-align:center;
+
+    margin:40px auto;
+
+    padding:12px 25px;
+
+    background:#03f7ff;
+
+    color:black;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    transition:.4s;
+
+}
+
+
+
+.back:hover{
+
+    background:white;
+
+    box-shadow:0 0 30px #d4af37;
+
+}
+
+
+
+
+
+/* Mobile */
+
+
+@media(max-width:800px){
+
+.gallery{
+
+columns:2;
+
+}
+
+}
+
+
+
+@media(max-width:500px){
+
+.gallery{
+
+columns:1;
+
+}
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>
+My Photo Gallery
+</h1>
+
+<p>
+Me
+</p>
+
+</header>
+
+
+
+
+<div class="gallery">
+
+
+<div class="card">
+
+<img src="images/photo6.png">
+
+</div>
+
+
+<div class="card">
+
+<img src="images/photo5.png">
+
+</div>
+
+
+<div class="card">
+
+<img src="images/photo3.png">
+
+</div>
+
+
+<div class="card">
+
+<img src="images/photo4.png">
+
+</div>
+
+
+<div class="card">
+
+<img src="images/photo1.jpeg">
+
+</div>
+
+
+<div class="card">
+
+<img src="images/photo2.jpeg">
+
+</div>
+
+
+
+</div>
+
+
+
+
+<a href="index.html" class="back">
+
+← Back To Home
+
+</a>
+
+
+
+</body>
+
+</html>
