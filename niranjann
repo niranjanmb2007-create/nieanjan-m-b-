@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Niranjan Portfolio</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Georgia", serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    background:#ece6db;
+    color:#333;
+
+}
+
+
+/* Header */
+
+header{
+
+    background:#1c1c1c;
+    color:white;
+
+    padding:20px 8%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+
+.logo{
+
+    font-size:30px;
+    font-weight:bold;
+    color:#37bcd4;
+
+}
+
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+
+}
+
+
+nav a:hover{
+
+    color:#d4af37;
+
+}
+
+
+
+/* Hero */
+
+
+.hero{
+
+    height:90vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+
+.profile{
+
+    width:160px;
+    height:160px;
+
+    border-radius:50%;
+
+    background:#d4af37;
+
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:70px;
+
+    margin:auto;
+
+    animation:zoom 1.5s;
+
+}
+
+
+
+@keyframes zoom{
+
+from{
+
+transform:scale(0);
+
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+
+
+h1{
+
+    font-size:50px;
+
+    margin-top:20px;
+
+    color:#1c1c1c;
+
+}
+
+
+
+.hero p{
+
+    font-size:22px;
+
+    margin-top:15px;
+
+    color:#555;
+
+}
+
+
+
+/* Buttons */
+
+
+.btn{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:12px 35px;
+
+    background:#1c1c1c;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    transition:.4s;
+
+}
+
+
+.btn:hover{
+
+    background:#d4af37;
+
+    transform:translateY(-5px);
+
+}
+
+
+
+.photo-btn{
+
+    margin-left:15px;
+
+    background:#d4af37;
+
+}
+
+
+
+.photo-btn:hover{
+
+    background:#1c1c1c;
+
+    color:#d4af37;
+
+}
+
+
+
+/* Sections */
+
+
+section{
+
+    width:80%;
+
+    margin:50px auto;
+
+    padding:35px;
+
+    background:white;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+    border-radius:10px;
+
+    animation:slide 1s;
+
+}
+
+
+
+@keyframes slide{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+
+
+h2{
+
+    color:#b8860b;
+
+    margin-bottom:20px;
+
+    font-size:30px;
+
+}
+
+
+
+/* Skills */
+
+
+.skills span{
+
+    display:inline-block;
+
+    padding:10px 20px;
+
+    margin:8px;
+
+    background:#f0e6c8;
+
+    border-radius:20px;
+
+}
+
+
+
+/* Projects */
+
+
+.project{
+
+    padding:15px;
+
+    margin:15px 0;
+
+    border-left:4px solid #d4af37;
+
+}
+
+
+
+/* Footer */
+
+
+footer{
+
+    background:#1c1c1c;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+
+<div class="logo">
+
+NIRANJAN
+
+</div>
+
+
+<nav>
+
+<a href="#about">About</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+
+<div class="hero">
+
+
+<div>
+
+
+<div class="profile">
+
+N
+
+</div>
+
+
+<h1>
+
+Niranjan M B
+
+</h1>
+
+
+<p>
+
+BCA Student | Web Developer | Programmer
+
+</p>
+
+
+
+<a href="#contact" class="btn">
+
+Contact Me
+
+</a>
+
+
+<a href="photos.html" class="btn photo-btn">
+
+View My Photos
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<section id="about">
+
+
+<h2>
+
+About Me
+
+</h2>
+
+
+<p>
+
+I am Niranjan, a BCA student interested in programming,
+web development and software technologies.
+I enjoy creating websites and learning new technologies.
+
+</p>
+
+
+</section>
+
+
+
+
+
+<section id="skills">
+
+
+<h2>
+
+Skills
+
+</h2>
+
+
+<div class="skills">
+
+
+<span>HTML</span>
+
+<span>CSS</span>
+
+<span>JavaScript</span>
+
+<span>Python</span>
+
+<span>C Programming</span>
+
+<span>Web Design</span>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section id="projects">
+
+
+<h2>
+
+Projects
+
+</h2>
+
+
+<div class="project">
+
+<h3>
+
+Personal Portfolio Website
+
+</h3>
+
+<p>
+
+A professional website created using HTML and CSS.
+
+</p>
+
+</div>
+
+
+
+<div class="project">
+
+<h3>
+
+Python Animation Projects
+
+</h3>
+
+<p>
+
+Creative animations made using Python Turtle.
+
+</p>
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section id="contact">
+
+
+<h2>
+
+Contact
+
+</h2>
+
+
+<p>
+
+Email: yourmail@gmail.com
+
+</p>
+
+
+<p>
+
+Instagram: your_username
+
+</p>
+
+
+<p>
+
+GitHub: your_username
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+<footer>
+
+© 2026 Niranjan M B | Classic Portfolio
+
+</footer>
+
+
+
+</body>
+
+</html>
